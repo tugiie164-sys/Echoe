@@ -1,0 +1,7 @@
+{
+  "name": "ECHO — Customer Intelligence & Retention SaaS",
+  "description": "Enterprise Guest Wi-Fi Authentication, Dual-Identity Management, and Customer Retention Infrastructure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

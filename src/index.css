@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Semantic Light Tokens */
+    --surface-page: #F8FAFC;
+    --surface-card: #FFFFFF;
+    --surface-elevated: #F1F5F9;
+    --surface-muted: #E2E8F0;
+    --surface-glass: rgba(255, 255, 255, 0.85);
+
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #64748B;
+    --text-inverted: #FFFFFF;
+
+    --border-subtle: #E2E8F0;
+    --border-strong: #CBD5E1;
+
+    --brand-navy: #0F172A;
+    --brand-navy-light: #1E293B;
+    --brand-blue: #2563EB;
+    --brand-teal: #0D9488;
+    --brand-teal-light: #CCFBF1;
+
+    --status-active: #059669;
+    --status-active-bg: #ECFDF5;
+    --status-loyal: #7C3AED;
+    --status-loyal-bg: #F5F3FF;
+    --status-returning: #0284C7;
+    --status-returning-bg: #F0F9FF;
+    --status-cooling: #D97706;
+    --status-cooling-bg: #FFFBEB;
+    --status-atrisk: #EA580C;
+    --status-atrisk-bg: #FFF7ED;
+    --status-inactive: #64748B;
+    --status-inactive-bg: #F1F5F9;
+    --status-lost: #DC2626;
+    --status-lost-bg: #FEF2F2;
+  }
+
+  .dark {
+    /* Semantic Dark Tokens - Visual Comfort without harsh black or blinding contrast */
+    --surface-page: #080D1A;
+    --surface-card: #0F172A;
+    --surface-elevated: #162036;
+    --surface-muted: #1E293B;
+    --surface-glass: rgba(15, 23, 42, 0.85);
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --text-inverted: #0F172A;
+
+    --border-subtle: #1E293B;
+    --border-strong: #334155;
+
+    --brand-navy: #38BDF8;
+    --brand-navy-light: #0284C7;
+    --brand-blue: #3B82F6;
+    --brand-teal: #14B8A6;
+    --brand-teal-light: #134E4A;
+
+    --status-active: #34D399;
+    --status-active-bg: #064E3B;
+    --status-loyal: #A78BFA;
+    --status-loyal-bg: #4C1D95;
+    --status-returning: #38BDF8;
+    --status-returning-bg: #0C4A6E;
+    --status-cooling: #FBBF24;
+    --status-cooling-bg: #78350F;
+    --status-atrisk: #FB923C;
+    --status-atrisk-bg: #7C2D12;
+    --status-inactive: #94A3B8;
+    --status-inactive-bg: #1E293B;
+    --status-lost: #F87171;
+    --status-lost-bg: #7F1D1D;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  /* Universal keyboard focus indicator for WCAG 2.2 AA */
+  *:focus-visible {
+    outline: 2px solid #0D9488 !important;
+    outline-offset: 2px !important;
+  }
+}
+
+/* Reduced motion preference respect */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
